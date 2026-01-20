@@ -15,31 +15,13 @@
 [:writing_hand: 作业地址](./backend/homework01.md)  
 这里作业统一提交一个能公开访问的github地址，每个章节的作业，就对应一个文件夹
 
-## 任务 :two:: 文档资料:point_right: [Go高级进阶](https://github.com/MetaNodeAcademy/Base1_golang/tree/main/02.%E7%AC%AC%E4%B8%80%E7%AB%A0%20Golang%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80)
+## 任务 :two:: 文档资料:point_right: [Go高级进阶](https://github.com/MetaNodeAcademy/golang-learning/blob/main/lesson-02/README.md)
 
 :book: **​内容概览**  
 掌握Go高阶功能，包括多态、并发、编译等。  
 :white_check_mark: ​**预期成果**  
 能完成面向对象编程、多任务处理以及同步机制  
 :hourglass: ​**预计时间**：6小时 
-
-- interface 接口 
-    [📺视频](https://k22zz.xetlk.com/s/fwaY4)
-  [📄 课件](https://github.com/MetaNodeAcademy/Base1_golang/blob/main/02.%E7%AC%AC%E4%B8%80%E7%AB%A0%20Golang%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/1.17%20interface%20%E6%8E%A5%E5%8F%A3/interface%20%E6%8E%A5%E5%8F%A3.md)
-
-
-- 并发-gorutine与channel 
-    [📺视频](https://k22zz.xetlk.com/s/43OHGe)
-  [📄 课件](https://github.com/MetaNodeAcademy/Base1_golang/blob/main/02.%E7%AC%AC%E4%B8%80%E7%AB%A0%20Golang%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/1.18%20%E5%B9%B6%E5%8F%91-goroutine%E4%B8%8Echannel/%E5%B9%B6%E5%8F%91-goroutine%E4%B8%8Echannel.md)
-
-- 并发-select关键字 
-    [📺视频](https://k22zz.xetlk.com/s/1GCBRa)
-  [📄 课件](https://github.com/MetaNodeAcademy/Base1_golang/blob/main/02.%E7%AC%AC%E4%B8%80%E7%AB%A0%20Golang%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/1.19%20%E5%B9%B6%E5%8F%91%20-%20select%20%E5%85%B3%E9%94%AE%E5%AD%97/%E5%B9%B6%E5%8F%91%20-%20select%20%E5%85%B3%E9%94%AE%E5%AD%97.md)
-  
-- 编译可执行二进制文件 
-    [📺视频](https://k22zz.xetlk.com/s/2gOn1P)
-  [📄 课件](https://github.com/MetaNodeAcademy/Base1_golang/blob/main/02.%E7%AC%AC%E4%B8%80%E7%AB%A0%20Golang%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/1.20%20%E7%BC%96%E8%AF%91%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/%E7%BC%96%E8%AF%91%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6.md)
-
 
 [:writing_hand: 作业地址](./backend/homework02.md)
 
