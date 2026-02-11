@@ -35,20 +35,8 @@
 
 
 
-## 任务3️⃣  : 文档资料👉 [Pledge项目](https://github.com/MetaNodeAcademy/ProjectBreakdown-Pledge)
 
-:one:  系统概述
-借贷是Defi领域非常重要的模块，Maker、Aave、Compound是当前借贷领域的三巨头。  
-Maker: 抵押资产获取稳定币DAI  [详情](https://docs.makerdao.com/smart-contract-modules/dai-module)  
-Aave: 加密货币借贷协议  [详情](https://aave.com/docs/developers/smart-contracts)  
-Compound: 加密货币借贷协议  [详情](https://docs.compound.finance/#protocol-contracts)  
-Pledge 是一个去中心化金融（DeFi）项目，旨在提供固定利率的借贷协议，主要服务于加密资产持有者。Pledge 旨在解决 DeFi 借贷市场中缺乏固定利率和固定期限融资产品的问题。传统的 DeFi 借贷协议通常采用可变利率，主要服务于短期交易者，而 Pledge 则专注于长期融资需求。
- 
-⌛ ​**预计时间**：14小时
-  
-
-
-## 任务4️⃣  : 文档资料👉 [DEX-GO实战](https://github.com/MetaNodeAcademy/DEX-Proj)   
+## 任务3️⃣  : 文档资料👉 [DEX-GO实战](https://github.com/MetaNodeAcademy/DEX-Proj)   
 📖 内容概览：  
 去中心化交易所（dex）  
 [资料地址点这里](https://github.com/MetaNodeAcademy/DEX-Proj)   
@@ -71,12 +59,24 @@ Pledge 是一个去中心化金融（DeFi）项目，旨在提供固定利率的
 ⌛ ​**预计时间**：16小时
 
 
-## 任务5️⃣  : NFT市场项目👉 [课件&视频资料](https://github.com/MetaNodeAcademy/ProjectBreakdown-NFTMarket)
+## 任务4️⃣  : NFT市场项目👉 [课件&视频资料](https://github.com/MetaNodeAcademy/ProjectBreakdown-NFTMarket)
 
 :one:  系统概述   
 NFT 交易市场不仅是一个基于区块链的应用，也是链上技术与链下服务高度结合的典型范例。通过项目的设计和开发，可以探索如何将区块链的去中心化、透明性、不可篡改等特点与传统的链下业务流程进行有机融合，创建一个灵活、可扩展的系统架构，不仅服务于 NFT 交易市场，还能支持未来其他潜在的链上应用，如 Bitcoin 上的铭文、符文等新兴数字资产。
 
 ⌛预计时间：12小时
+
+
+## 任务5️⃣  : 文档资料👉 [Pledge项目](https://github.com/MetaNodeAcademy/ProjectBreakdown-Pledge)
+
+:one:  系统概述
+借贷是Defi领域非常重要的模块，Maker、Aave、Compound是当前借贷领域的三巨头。  
+Maker: 抵押资产获取稳定币DAI  [详情](https://docs.makerdao.com/smart-contract-modules/dai-module)  
+Aave: 加密货币借贷协议  [详情](https://aave.com/docs/developers/smart-contracts)  
+Compound: 加密货币借贷协议  [详情](https://docs.compound.finance/#protocol-contracts)  
+Pledge 是一个去中心化金融（DeFi）项目，旨在提供固定利率的借贷协议，主要服务于加密资产持有者。Pledge 旨在解决 DeFi 借贷市场中缺乏固定利率和固定期限融资产品的问题。传统的 DeFi 借贷协议通常采用可变利率，主要服务于短期交易者，而 Pledge 则专注于长期融资需求。
+ 
+⌛ ​**预计时间**：14小时   
 
 
 ## 任务 6️⃣: 👉 📄 简历优化
