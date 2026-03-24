@@ -42,7 +42,7 @@
 [资料地址点这里](https://github.com/MetaNodeAcademy/DEX-Proj)   
 [项目预览](https://swap.metanode.tech)   
 
-**合约部分**
+**合约部分:**   
 [📺  Dex简介](https://k22zz.xetlk.com/s/3s5E27)  
 [📙 课件](https://github.com/MetaNodeAcademy/Base2_Solidity_Dex/blob/main/DEX%E7%AE%80%E4%BB%8B.md)  
 [📺  合约设计](https://k22zz.xetlk.com/s/3HWoh5)  
