@@ -42,13 +42,14 @@
 [资料地址点这里](https://github.com/MetaNodeAcademy/DEX-Proj)   
 [项目预览](https://swap.metanode.tech)   
 
+**合约部分**
 [📺  Dex简介](https://k22zz.xetlk.com/s/3s5E27)  
 [📙 课件](https://github.com/MetaNodeAcademy/Base2_Solidity_Dex/blob/main/DEX%E7%AE%80%E4%BB%8B.md)  
 [📺  合约设计](https://k22zz.xetlk.com/s/3HWoh5)  
 [📙  课件](https://github.com/MetaNodeAcademy/Base2_Solidity_Dex/blob/main/MetaNodeSwap%E5%90%88%E7%BA%A6%E8%AE%BE%E8%AE%A1.md)  
 [📺  合约代码详解](https://k22zz.xetlk.com/s/1L19Ny)  
-[📙 课件](https://github.com/MetaNodeAcademy/Base2_Solidity_Dex/blob/main/MetaNodeSwap%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90.md) 
-[📺 后端教程 & 课件](https://github.com/MetaNodeAcademy/DEX-BACKEND-LESSON)   
+[📙 课件](https://github.com/MetaNodeAcademy/Base2_Solidity_Dex/blob/main/MetaNodeSwap%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90.md)   
+[**📺 后端教程 & 📙 课件**](https://github.com/MetaNodeAcademy/DEX-BACKEND-LESSON)   
 
 ✅预期成果：  理解去中心化交易所的交易机制 
 - 理解 x * y = k 价格曲线**交易对**的solidity合约实现  
