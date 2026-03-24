@@ -67,7 +67,7 @@ NFT 交易市场不仅是一个基于区块链的应用，也是链上技术与�
 ⌛预计时间：12小时
 
 
-## 任务5️⃣  : 文档资料👉 [MetaLand MeMe发射器](https://github.com/MetaNodeAcademy/meme-launchpad)
+## 任务5️⃣  : MetaLand (MeMe发射器)
 
 :one:  系统概述：  
 提供低成本、无代码的「一键发币」功能，让用户能轻松在 BSC 上创建、发行和交易 Meme 代币，具有公平启动机制和自动流动性整合功能。   
