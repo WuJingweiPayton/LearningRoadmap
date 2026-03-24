@@ -67,7 +67,24 @@ NFT 交易市场不仅是一个基于区块链的应用，也是链上技术与�
 ⌛预计时间：12小时
 
 
-## 任务5️⃣  : 文档资料👉 [Pledge项目](https://github.com/MetaNodeAcademy/ProjectBreakdown-Pledge)
+## 任务5️⃣  : 文档资料👉 [MetaLand MeMe发射器](https://github.com/MetaNodeAcademy/meme-launchpad)
+
+:one:  系统概述：  
+提供低成本、无代码的「一键发币」功能，让用户能轻松在 BSC 上创建、发行和交易 Meme 代币，具有公平启动机制和自动流动性整合功能。   
+
+
+- 合约工程：https://github.com/MetaNodeAcademy/meme-launchpad   
+- 前端工程：https://github.com/MetaNodeAcademy/meme-launchpad-fe   
+- 后端工程：https://github.com/MetaNodeAcademy/meme-launchpad-back   
+
+- [📺 扫链讲解](https://k22zz.xetslk.com/s/4uZNwI)   
+- [📺 签名部署代币](https://k22zz.xetslk.com/s/dW6Hr)   
+
+⌛ ​**预计时间**：14小时   
+
+
+
+## 任务 6️⃣  : 文档资料👉 [Pledge项目](https://github.com/MetaNodeAcademy/ProjectBreakdown-Pledge)
 
 :one:  系统概述
 借贷是Defi领域非常重要的模块，Maker、Aave、Compound是当前借贷领域的三巨头。  
@@ -79,7 +96,7 @@ Pledge 是一个去中心化金融（DeFi）项目，旨在提供固定利率的
 ⌛ ​**预计时间**：14小时   
 
 
-## 任务 6️⃣: 👉 📄 简历优化
+## 任务 7️⃣: 👉 📄 简历优化
 [👉 📺 视频](https://k22zz.xetslk.com/sl/2EyijF)   
 [👉 📖 找简历项目](https://github.com/MetaNodeAcademy/web3-interview-sharing)   
 
