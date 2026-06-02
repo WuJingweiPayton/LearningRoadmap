@@ -78,8 +78,8 @@ NFT 交易市场不仅是一个基于区块链的应用，也是链上技术与�
 - 前端工程：https://github.com/MetaNodeAcademy/meme-launchpad-fe   
 - 后端工程：https://github.com/MetaNodeAcademy/meme-launchpad-back   
 
-- [📺 扫链讲解](https://k22zz.xetslk.com/s/4uZNwI)   
-- [📺 签名部署代币](https://k22zz.xetslk.com/s/dW6Hr)   
+- [📺 扫链讲解](https://appibxs98ig9955.h5.xet.pomoho.com/p/course/video/v_69ae8d11e4b0694c34e54e8e?product_id=course_2xArq45EVWERVb4oHPYEmCLzHG5&course_id=course_2xArq45EVWERVb4oHPYEmCLzHG5&sub_course_id=subcourse_2xAsXvfLByJDhFHzXRDJtO8s91w)   
+- [📺 签名部署代币](https://appibxs98ig9955.h5.xet.pomoho.com/p/course/video/v_69b2790be4b0694c5b981b3c?product_id=course_2xArq45EVWERVb4oHPYEmCLzHG5&course_id=course_2xArq45EVWERVb4oHPYEmCLzHG5&sub_course_id=subcourse_2xAsXvfLByJDhFHzXRDJtO8s91w)   
 
 ⌛ ​**预计时间**：14小时   
 
