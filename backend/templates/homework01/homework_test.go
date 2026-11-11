@@ -81,6 +81,7 @@ func TestIsPalindrome(t *testing.T) {
 		{"Example 2", -121, false},
 		{"Example 3", 10, false},
 		{"Example 4", 0, true},
+		{"Example 5", 123321, true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

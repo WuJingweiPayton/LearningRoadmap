@@ -2,6 +2,7 @@ package homework02
 
 import (
 	"fmt"
+	"math"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -10,26 +11,52 @@ import (
 // Q1: 指针 - 增加值
 // 编写一个函数，该函数接收一个整数指针作为参数，在函数内部将该指针指向的值增加10
 func AddTen(val *int) {
-	// TODO: 实现代码
+	*val += 10
 }
 
 // Q2: 指针 - 切片元素乘2
 // 实现一个函数，接收一个整数切片的指针，将切片中的每个元素乘以2
 func DoubleSlice(slice *[]int) {
-	// TODO: 实现代码
+	for i := range *slice {
+		(*slice)[i] *= 2
+	}
 }
 
 // Q3: Goroutine - 奇偶数打印
 // 编写一个程序，使用 go 关键字启动两个协程，一个协程打印从1到10的奇数，另一个协程打印从2到10的偶数。
 // 提示：为了测试能看到输出，可以使用 sync.WaitGroup 确保主程序等待协程结束
 func PrintOddEven() {
-	// TODO: 实现代码
+	var wg sync.WaitGroup
+	wg.Add(2)
+	go func() {
+		defer wg.Done()
+		for i := 1; i <= 10; i += 2 {
+			fmt.Println(i)
+		}
+	}()
+	go func() {
+		defer wg.Done()
+		for i := 2; i <= 10; i += 2 {
+			fmt.Println(i)
+		}
+	}()
+	wg.Wait()
 }
 
 // Q4: Goroutine - 任务调度
 // 设计一个任务调度器，接收一组任务（可以用函数表示），并使用协程并发执行这些任务，同时统计每个任务的执行时间。
 func TaskScheduler(tasks []func()) {
-	// TODO: 实现代码
+	var wg sync.WaitGroup
+	for i, task := range tasks {
+		wg.Add(1)
+		go func(idx int, fn func()) {
+			defer wg.Done()
+			start := time.Now()
+			fn()
+			fmt.Printf("Task %d took %v\n", idx, time.Since(start))
+		}(i, task)
+	}
+	wg.Wait()
 }
 
 // Q5: 面向对象 - 接口
@@ -44,30 +71,24 @@ type Rectangle struct {
 	Height float64
 }
 
-// TODO: 为 Rectangle 实现 Shape 接口
 func (r *Rectangle) Area() float64 {
-	// TODO: 实现代码
-	return 0
+	return r.Width * r.Height
 }
 
 func (r *Rectangle) Perimeter() float64 {
-	// TODO: 实现代码
-	return 0
+	return 2 * (r.Width + r.Height)
 }
 
 type Circle struct {
 	Radius float64
 }
 
-// TODO: 为 Circle 实现 Shape 接口
 func (c *Circle) Area() float64 {
-	// TODO: 实现代码
-	return 0
+	return math.Pi * c.Radius * c.Radius
 }
 
 func (c *Circle) Perimeter() float64 {
-	// TODO: 实现代码
-	return 0
+	return 2 * math.Pi * c.Radius
 }
 
 // Q6: 面向对象 - 组合
@@ -83,10 +104,8 @@ type Employee struct {
 	EmployeeID string
 }
 
-// TODO: 为 Employee 结构体实现一个 PrintInfo() string 方法，返回员工的信息 (格式自定，包含Name, Age, EmployeeID)
 func (e Employee) PrintInfo() string {
-	// TODO: 实现代码
-	return ""
+	return fmt.Sprintf("Name: %s, Age: %d, EmployeeID: %s", e.Name, e.Age, e.EmployeeID)
 }
 
 // Q7: Channel - 生产者消费者
@@ -94,15 +113,48 @@ func (e Employee) PrintInfo() string {
 // 一个协程生成从1到10的整数，并将这些整数发送到通道中，另一个协程从通道中接收这些整数并打印出来。
 // 为了方便测试，请将接收到的数字返回
 func ProducerConsumer() []int {
+	ch := make(chan int)
 	var result []int
-	// TODO: 实现代码
+	var wg sync.WaitGroup
+	wg.Add(2)
+	go func() {
+		defer wg.Done()
+		for i := 1; i <= 10; i++ {
+			ch <- i
+		}
+		close(ch)
+	}()
+	go func() {
+		defer wg.Done()
+		for v := range ch {
+			fmt.Println(v)
+			result = append(result, v)
+		}
+	}()
+	wg.Wait()
 	return result
 }
 
 // Q8: Channel - 缓冲通道
 // 实现一个带有缓冲的通道，生产者协程向通道中发送100个整数，消费者协程从通道中接收这些整数并打印。
 func BufferedChannel() {
-	// TODO: 实现代码
+	ch := make(chan int, 100)
+	var wg sync.WaitGroup
+	wg.Add(2)
+	go func() {
+		defer wg.Done()
+		for i := 1; i <= 100; i++ {
+			ch <- i
+		}
+		close(ch)
+	}()
+	go func() {
+		defer wg.Done()
+		for v := range ch {
+			fmt.Println(v)
+		}
+	}()
+	wg.Wait()
 }
 
 // Q9: 锁机制 - Mutex
@@ -110,8 +162,21 @@ func BufferedChannel() {
 // 启动10个协程，每个协程对计数器进行1000次递增操作，最后输出计数器的值。
 func MutexCounter() int {
 	var count int
-	// var mu sync.Mutex
-	// TODO: 实现代码
+	var mu sync.Mutex
+	var wg sync.WaitGroup
+	for i := 0; i < 10; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for j := 0; j < 1000; j++ {
+				mu.Lock()
+				count++
+				mu.Unlock()
+			}
+		}()
+	}
+	wg.Wait()
+	fmt.Println(count)
 	return count
 }
 
@@ -120,7 +185,17 @@ func MutexCounter() int {
 // 启动10个协程，每个协程对计数器进行1000次递增操作，最后输出计数器的值。
 func AtomicCounter() int32 {
 	var count int32
-	// TODO: 实现代码
+	var wg sync.WaitGroup
+	for i := 0; i < 10; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for j := 0; j < 1000; j++ {
+				atomic.AddInt32(&count, 1)
+			}
+		}()
+	}
+	wg.Wait()
+	fmt.Println(count)
 	return count
 }
-
