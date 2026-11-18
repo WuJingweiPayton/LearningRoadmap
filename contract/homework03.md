@@ -1,3 +1,14 @@
+## Foundry 作业目录
+
+题目原文要求 Hardhat。本仓库按 Foundry 提交，代码、测试和部署脚本在 [`templates/homework03`](./templates/homework03/)。
+
+```bash
+cd LearningRoadmap/contract/templates/homework03
+forge test -vv
+```
+
+---
+
 ### :white_check_mark:  大作业：实现一个 NFT 拍卖市场
 任务目标
 1. 使用 Hardhat 框架开发一个 NFT 拍卖市场。

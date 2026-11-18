@@ -1,3 +1,14 @@
+## Foundry 作业目录
+
+代码与测试见 [`templates/homework01`](./templates/homework01/)（与本题 `homework01.md` 配套）。
+
+```bash
+cd LearningRoadmap/contract/templates/homework01
+forge test -vv
+```
+
+---
+
 ### 1.  :white_check_mark: 创建一个名为Voting的合约，包含以下功能：
 - 一个mapping来存储候选人的得票数
 - 一个vote函数，允许用户投票给某个候选人

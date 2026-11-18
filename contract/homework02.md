@@ -1,3 +1,14 @@
+## Foundry 作业目录
+
+代码与测试见 [`templates/homework02`](./templates/homework02/)（与本题 `homework02.md` 配套）。
+
+```bash
+cd LearningRoadmap/contract/templates/homework02
+forge test -vv
+```
+
+---
+
 ### :white_check_mark: 作业3：编写一个讨饭合约
 任务目标
 1. 使用 Solidity 编写一个合约，允许用户向合约地址发送以太币。
