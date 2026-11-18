@@ -1,0 +1,25 @@
+name: Homework 05 Check
+
+on:
+  push:
+    paths:
+      - 'backend/templates/homework05/**'
+  pull_request:
+    paths:
+      - 'backend/templates/homework05/**'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+      - name: Test Homework 05
+        run: |
+          cd backend/templates/homework05
+          go mod tidy
+          go test -v ./...
+          go build -o /dev/null ./...

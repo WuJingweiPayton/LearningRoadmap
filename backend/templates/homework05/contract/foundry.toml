@@ -1,0 +1,4 @@
+[profile.default]
+src = "."
+out = "../artifacts"
+optimizer = true

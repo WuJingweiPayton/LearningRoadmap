@@ -1,3 +1,14 @@
+## 作业目录
+
+实现与说明在 [`templates/homework05`](./templates/homework05/README.md)。
+
+```bash
+cd LearningRoadmap/backend/templates/homework05
+go test ./...
+```
+
+---
+
 ## 任务 1：区块链读写 任务目标
 使用 Sepolia 测试网络实现基础的区块链交互，包括查询区块和发送交易。
  具体任务

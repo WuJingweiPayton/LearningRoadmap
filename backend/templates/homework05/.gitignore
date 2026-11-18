@@ -1,0 +1,6 @@
+.env
+contract/cache/
+artifacts/Counter.sol/
+artifacts/build-info/
+!artifacts/Counter.abi
+!artifacts/Counter.bin
