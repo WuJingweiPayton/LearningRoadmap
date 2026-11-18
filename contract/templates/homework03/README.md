@@ -102,11 +102,23 @@ forge script script/UpgradeAuctionTransparent.s.sol:UpgradeAuctionTransparentScr
 
 ERC20 出价前，owner 要对那个代币调用 `setPriceFeed(token, aggregator)`。
 
+### Sepolia 已部署地址（UUPS）
+
+| 合约 | 地址 | Etherscan |
+|------|------|-----------|
+| **拍卖代理（交互入口）** | `0x845C37d74aa507ad18B2BaEaC4aF7E7bD2BE734e` | [查看](https://sepolia.etherscan.io/address/0x845C37d74aa507ad18B2BaEaC4aF7E7bD2BE734e) |
+| **AuctionNFT** | `0xeCb8653E045e01758878CfB529cb58DB2a4c3c3e` | [查看](https://sepolia.etherscan.io/address/0xeCb8653E045e01758878CfB529cb58DB2a4c3c3e) |
+| 实现 v1（已替换，仅备案） | `0x9A21549047010cC01959a932527e9600Ed40705a` | [查看](https://sepolia.etherscan.io/address/0x9A21549047010cC01959a932527e9600Ed40705a) |
+| 实现 v2（**当前** implementation） | `0xCC121CAE17b7787030f0d759fD1BEC278d54C9aC` | [查看](https://sepolia.etherscan.io/address/0xCC121CAE17b7787030f0d759fD1BEC278d54C9aC) |
+| Chainlink ETH/USD（初始化用） | `0x694AA1769357215DE4FAC081bf1f309aDC325306` | [查看](https://sepolia.etherscan.io/address/0x694AA1769357215DE4FAC081bf1f309aDC325306) |
+
+部署账户（proxy owner）：`0x489c6E74bd5776d318b1fC5944b20920d9699A2f`。链上已执行 UUPS 升级，`implementationVersion()` 为 2。
+
 ## 提交时还要你本机补的内容
 
 | 项 | 状态 |
 |----|------|
 | 合约与测试 | 已完成，本地 `forge test` 通过 |
 | 测试报告 | [TEST_REPORT.md](./TEST_REPORT.md) |
-| 测试网合约地址 | 部署后把 proxy、NFT 地址填到这里 |
+| 测试网合约地址 | 已填：见上文 **Sepolia 已部署地址（UUPS）** |
 | 测试网截图 | 部署和一次出价/结算后自行补充 |
